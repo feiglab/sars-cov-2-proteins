@@ -8,7 +8,7 @@ We predicted 10 models for SARS-Cov-2 proteins based on our latest structure pre
 Early in March, 2020, Google DeepMind published their predicted models on [their web page](https://deepmind.com/research/open-source/computational-predictions-of-protein-structures-associated-with-COVID-19) by using their latest AlphaFold method [4]. The models covers 6 SARS-Cov-2 proteins, which are overlapped to ours. We examined earlier that AlphaFold models which are machine learning-based can be improved further with physics-based refinement method. [5] Physics-based refinement can complement machine learning-based models by providing more atomistic details such as better structure packing and loop structures. 
 
 ### Model summary and comparisons
-| Protein | RefSeq | FeigLab | AlphaFold | Structure difference [A] | Structure change</br>after refinement [A] |
+| Protein | RefSeq | FeigLab | AlphaFold | Structure difference [A] | Structure change</br>after refinement</br> (AlphaFold)[A] |
 |---------|--------|:---------:|:-----------:|:----------------------:|:--:|
 |nsp2| [YP_009725298.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725298.1) | [1-638]() | [1-345, 438-638](https://github.com/feiglab/sars-cov-2-proteins/blob/master/AlphaFold/nsp2.pdb) | 15.8 (1-345)</br> 17.1 (438-638) | 1.5 (1-345)</br> 1.9 (438-638) |
 |nsp4| [YP_009725300.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725300.1) | [1-500](https://github.com/feiglab/sars-cov-2-proteins/blob/master/FeigLab/nsp4.pdb) | [1-489](https://github.com/feiglab/sars-cov-2-proteins/blob/master/AlphaFold/nsp4.pdb) | 36.3 (1-500)</br> 25.2 (1-273)</br> 8.1 (274-399)</br> 9.8 (400-489)</br> | 1.7 (1-500)</br> 1.8 (1-273)</br> 1.9 (274-399)</br> 0.8 (400-489) |
