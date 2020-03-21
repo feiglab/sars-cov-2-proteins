@@ -7,8 +7,19 @@ We predicted 10 models for SARS-Cov-2 proteins based on our latest structure pre
 ### Refined AlphaFold models (AlphaFold)
 Early in March, 2020, Google DeepMind published their predicted models on [their web page](https://deepmind.com/research/open-source/computational-predictions-of-protein-structures-associated-with-COVID-19) by using their latest AlphaFold method [4]. The models covers 6 SARS-Cov-2 proteins, which are overlapped to ours. We examined earlier that AlphaFold models which are machine learning-based can be improved further with physics-based refinement method. [5] Physics-based refinement can complement machine learning-based models by providing more atomistic details such as better structure packing and loop structures. 
 
-### Model summary
-
+### Model summary and comparisons
+| Protein | RefSeq | FeigLab | AlphaFold | Structure difference [A] | Structure change</br>after refinement [A] |
+|---------|--------|:---------:|:-----------:|:----------------------:|:--:|
+|nsp2| [YP_009725298.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725298.1) | [1-638]() | [1-345, 438-638](https://github.com/feiglab/sars-cov-2-proteins/blob/master/AlphaFold/nsp2.pdb) | 15.8 (1-345)</br> 17.1 (438-638) | 1.5 (1-345)</br> 1.9 (438-638) |
+|nsp4| [YP_009725300.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725300.1) | [1-500](https://github.com/feiglab/sars-cov-2-proteins/blob/master/FeigLab/nsp4.pdb) | [1-489](https://github.com/feiglab/sars-cov-2-proteins/blob/master/AlphaFold/nsp4.pdb) | 36.3 (1-500)</br> 25.2 (1-273)</br> 8.1 (274-399)</br> 9.8 (400-489)</br> | 1.7 (1-500)</br> 1.8 (1-273)</br> 1.9 (274-399)</br> 0.8 (400-489) |
+|nsp6| [YP_009725302.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725302.1) | [1-290](https://github.com/feiglab/sars-cov-2-proteins/blob/master/FeigLab/nsp6.pdb) | [1-278](https://github.com/feiglab/sars-cov-2-proteins/blob/master/AlphaFold/nsp6.pdb) | 18.3 | 2.0 |
+|PL-PRO| [YP_009725299.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725299.1) | [1260-1945](https://github.com/feiglab/sars-cov-2-proteins/blob/master/FeigLab/PL-PRO.pdb) | [1571-1927](https://github.com/feiglab/sars-cov-2-proteins/blob/master/AlphaFold/PL-PRO_C_terminal.pdb) | 12.4 | 1.5 |
+|ORF3a| [YP_009724391.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724391.1) | [1-275](https://github.com/feiglab/sars-cov-2-proteins/blob/master/FeigLab/ORF3a.pdb) | [38-233](https://github.com/feiglab/sars-cov-2-proteins/blob/master/AlphaFold/Protein_3a.pdb) | 14.1 | 2.3 |
+|M_protein| [YP_009724393.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724393.1) | [1-222](https://github.com/feiglab/sars-cov-2-proteins/blob/master/FeigLab/M_protein.pdb) | [11-203](https://github.com/feiglab/sars-cov-2-proteins/blob/master/AlphaFold/M_protein.pdb) | 11.6 | 1.3 |
+|ORF6| [YP_009724394.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724394.1) | [1-61](https://github.com/feiglab/sars-cov-2-proteins/blob/master/FeigLab/ORF6.pdb) | N/A | N/A | N/A |
+|ORF8| [YP_009724396.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724396.1) | [1-121](https://github.com/feiglab/sars-cov-2-proteins/blob/master/FeigLab/ORF8.pdb) | N/A | N/A | N/A |
+|ORF10| [YP_009725255.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725255.1) | [1-38](https://github.com/feiglab/sars-cov-2-proteins/blob/master/FeigLab/ORF10.pdb) | N/A | N/A | N/A |
+|ORF7b| [YP_009725296.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725296.1) | [1-43](https://github.com/feiglab/sars-cov-2-proteins/blob/master/FeigLab/ORF7b.pdb) | N/A | N/A | N/A |
 
 ### References
 1. Yang, J. *et al.*, Improved protein structure prediction using predicted interresidue orientations, *Proc. Natl. Acad. Sci. USA*, (**2020**). [[LINK]](https://www.pnas.org/content/117/3/1496.short)
