@@ -1,6 +1,8 @@
 # SARS-Cov-2 protein structure models
 We have predicted and/or refined SARS-Cov-2 protein structure models. We especially focused on proteins which were hard to predict by using homology modeling (template-based modeling) because of the lack of experimentally determined homolog protein structures. We are publishing two sets of structure models: models based on our structure prediction pipeline and refined AlphaFold models.   
 
+**For detailed modeling procedures and analyses, see [our bioRxiv paper](https://www.biorxiv.org/content/10.1101/2020.03.25.008904v1).**
+
 ### Our structure prediction pipeline-based models (FeigLab)
 We predicted 10 models for SARS-Cov-2 proteins based on our latest structure prediction pipeline. Our structure prediction pipeline consists of two major features: initial contact-based structure prediction followed by molecular dynamics (MD) simulation-based refinement. We use trRosetta [1] for the initial contact-based structure prediction. We generated 10 models for each target protein, and the best scored model was subjected to the further refinement. Our refinement protocol is based on molecular dynamics (MD) simulations [2]. Various structures are sampled in the vicinity of the initial model structure via MD simulations during the refinement, and a set of low energy conformations is selected and averaged to get an ensemble averaged structure. Our refinement protocol demonstrated success during the last several CASPs with consistent improvements in model qualities. [3] The refinement protocol used here is improved from the method used during the last CASP.
 
