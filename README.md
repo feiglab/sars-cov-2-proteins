@@ -26,6 +26,15 @@ As a collaboration with Jinbo Xu, we refined his models, which are based on [Rap
 |ORF10| [YP_009725255.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725255.1) | 1-38  | N/A | N/A | N/A |
 |ORF7b| [YP_009725296.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725296.1) | 1-43  | N/A | N/A | N/A |
 
+### Figures of the models
+![nsp2](https://github.com/feiglab/sars-cov-2-proteins/blob/master/images/nsp2.png)
+![nsp4](https://github.com/feiglab/sars-cov-2-proteins/blob/master/images/nsp4.png)
+![nsp6](https://github.com/feiglab/sars-cov-2-proteins/blob/master/images/nsp6.png)
+![PL-PRO](https://github.com/feiglab/sars-cov-2-proteins/blob/master/images/PL-PRO.png)
+![ORF3a](https://github.com/feiglab/sars-cov-2-proteins/blob/master/images/ORF3a2.png)
+![M_protein](https://github.com/feiglab/sars-cov-2-proteins/blob/master/images/M_protein.png)
+![Etc](https://github.com/feiglab/sars-cov-2-proteins/blob/master/images/etc.png)
+
 ### References
 1. Yang, J. *et al.*, Improved protein structure prediction using predicted interresidue orientations, *Proc. Natl. Acad. Sci. USA*, (**2020**). [[LINK]](https://www.pnas.org/content/117/3/1496.short)
 2. Heo, L. and Feig, M., PREFMD: a web server for protein structure refinement via molecular dynamics simulations, *Bioinformatics*, (**2017**). [[LINK]](https://academic.oup.com/bioinformatics/article/34/6/1063/4604595)
