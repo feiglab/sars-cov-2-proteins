@@ -28,12 +28,32 @@ As a collaboration with Jinbo Xu, we refined his models, which are based on [Rap
 
 ### Figures of the models
 ![nsp2](https://github.com/feiglab/sars-cov-2-proteins/blob/master/images/nsp2.png)
+**Protein models for nsp2**: FeigLab (A), Zhang group (B), RaptorX (C), and AlphaFold models and their refined models for residues 1–345 (D) and 438–638 (E). Structures are shown in cartoon representation and colored in rainbow from blue (N-terminal) to red (C-terminal). (D and E) Refined AlphaFold models are shown in rainbow, while AlphaFold models are shown in grey. Significantly changed regions after refinement are indicated by red arrows.
+
 ![nsp4](https://github.com/feiglab/sars-cov-2-proteins/blob/master/images/nsp4.png)
+**Protein models for nsp4**: FeigLab (A), Zhang group (B), RaptorX (C), and AlphaFold models and their refined models for residues 1–273 (D), 274–399 (E), and 400–489 (F).
+
+
 ![nsp6](https://github.com/feiglab/sars-cov-2-proteins/blob/master/images/nsp6.png)
+**Protein models for nsp6**: FeigLab (A), Zhang group (B), RaptorX (C), and AlphaFold model and its refined model (D). 
+
+
 ![PL-PRO](https://github.com/feiglab/sars-cov-2-proteins/blob/master/images/PL-PRO.png)
-![ORF3a](https://github.com/feiglab/sars-cov-2-proteins/blob/master/images/ORF3a2.png)
+**Protein models for Papain-like proteinase (PL-PRO, nsp3)**: FeigLab (A), Zhang group (B), RaptorX (C), and AlphaFold models and their refined models (D). Domains for residues 1260–1570, 1571–1762, and 1763–1927 are shown left, center, and right, respectively. 
+
+
+![ORF3a](https://github.com/feiglab/sars-cov-2-proteins/blob/master/images/ORF3a.png)
+**Protein models for ORF3a**: FeigLab (A), Zhang group (B), RaptorX (C), and AlphaFold model and its refined model (D). 
+
+
 ![M_protein](https://github.com/feiglab/sars-cov-2-proteins/blob/master/images/M_protein.png)
+**Protein models for Membrane glycoprotein**: FeigLab (A), Zhang group (B), RaptorX (C), and AlphaFold model and its refined model (D).
+
+
 ![Etc](https://github.com/feiglab/sars-cov-2-proteins/blob/master/images/etc.png)
+Protein models from FeigLab (A), Zhang group (B), and RaptorX (C). From the left to the right, protein models for **ORF6**, **ORF8**, **ORF10**, and **ORF7b** are shown. 
+
+
 
 ### References
 1. Yang, J. *et al.*, Improved protein structure prediction using predicted interresidue orientations, *Proc. Natl. Acad. Sci. USA*, (**2020**). [[LINK]](https://www.pnas.org/content/117/3/1496.short)
