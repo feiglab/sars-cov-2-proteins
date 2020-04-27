@@ -30,12 +30,7 @@ on GPU clusters provided by [COVID-19 HPC Consortium](https://covid19-hpc-consor
 the [MSU-HPCC](https://icer.msu.edu/about/announcements/covid-19-research-icer-queue-times).
 
 ### Model summary and comparisons
-|  Protein | RefSeq | [FeigLab](https://github.com/feiglab/sars-cov-2-proteins/tree/master/FeigLab) |
-[RaptorX](https://github.com/feiglab/sars-cov-2-proteins/tree/master/RaptorX) |
-[AlphaFold](https://github.com/feiglab/sars-cov-2-proteins/tree/master/AlphaFold) |
-[BakerLab](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Soluble) |
-[SWISS-MODEL](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Soluble) |
-[Membrane](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Membrane) |
+|  Protein | RefSeq | [FeigLab](https://github.com/feiglab/sars-cov-2-proteins/tree/master/FeigLab) | [RaptorX](https://github.com/feiglab/sars-cov-2-proteins/tree/master/RaptorX) | [AlphaFold](https://github.com/feiglab/sars-cov-2-proteins/tree/master/AlphaFold) | [BakerLab](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Soluble) | [SWISS-MODEL](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Soluble) | [Membrane](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Membrane) |
 |:--------:|:--------:|:-------:|:-------:|:---------:|:--------:|:-----------:|:--------:|
 |nsp1      | [YP_009725297.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725297.1) | O | X | X | X | O | X |
 |nsp2      | [YP_009725298.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725298.1) | O | O | O | O | X | X |
