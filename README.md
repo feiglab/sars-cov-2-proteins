@@ -23,28 +23,39 @@ ${proteinName}\_${domainNumber}\_swiss.pdb for refined ${proteinName}'s ${domain
 
 ### Refinement of Membrane proteins
 We revisited 4 membrane proteins, M, E, nsp4, and nsp6, to refine with consideration of membrane environment. We did our
-best to predict or select among available models for the initial models by doing literature searches carefully. We
-refined the proteins in the ER membrane (55% POPC, 25% POPE, 10% POPI, 2% POPS, 6% Cholestreol, 2% cardiolipin), which
+best to predict or select among available models for the initial models by doing literature searches carefully. For the
+detailed explanation on the initial models are described below. We refined the proteins in the ER membrane (55% POPC, 25% POPE, 10% POPI, 2% POPS, 6% Cholestreol, 2% cardiolipin), which
 is set up via [CHARMM-GUI](http://www.charmm-gui.org/?doc=input/membrane.bilayer). Refinement simulations were performed
 on GPU clusters provided by [COVID-19 HPC Consortium](https://covid19-hpc-consortium.org/) and
 the [MSU-HPCC](https://icer.msu.edu/about/announcements/covid-19-research-icer-queue-times).
+For M protein, we first revised its monomer structure by combining information from the AlphaFold model and ours. As it
+forms dimer in physiological condition, we built dimer models by facing two out of three transmembrane helices; it
+resulted in three candidates. These dimer models were subjected to coarse-grained MD simulations to adjust relative
+orientations by Prof. Khalid in Univ. of Southampton, UK. The resulting coarse-grained models were converted into
+all-atom models. One of the all-atom model was selected for the further refinement by using membrane insertion energy
+and visual inspection.
+For E protein, we predicted its monomer structure by using our structure prediction pipeline. Then, the model was used
+to built a homo-pentameric structure by using pentameric assembly of E protein of SARS-CoV (PDB ID: 5x29). Because
+C-terminal residues should not be in the membrane, so we manually adjusted their relative positions.
+For nsp4, we re-built our model with additional information from literature search.
+For nsp6, we took AlphaFold model for the refinement in the menbrane environment.
 
 ### Model summary and comparisons
-|  Protein | RefSeq | [FeigLab](https://github.com/feiglab/sars-cov-2-proteins/tree/master/FeigLab) | [RaptorX](https://github.com/feiglab/sars-cov-2-proteins/tree/master/RaptorX) | [AlphaFold](https://github.com/feiglab/sars-cov-2-proteins/tree/master/AlphaFold) | [BakerLab](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Soluble) | [SWISS-MODEL](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Soluble) | [Membrane](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Membrane) |
-|:--------:|:--------:|:-------:|:-------:|:---------:|:--------:|:-----------:|:--------:|
-|nsp1      | [YP_009725297.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725297.1) | O | X | X | X | O | X |
-|nsp2      | [YP_009725298.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725298.1) | O | O | O | O | X | X |
-|nsp4      | [YP_009725300.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725300.1) | O | O | O | X | X | O |
-|nsp6      | [YP_009725302.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725302.1) | O | O | O | X | X | O |
-|PL-PRO    | [YP_009725299.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725299.1) | O | O | O | X | O | X |
-|ORF3a     | [YP_009724391.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724391.1) | O | O | O | X | X | X |
-|M\_protein| [YP_009724393.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724393.1) | O | O | O | X | X | O |
-|ORF6      | [YP_009724394.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724394.1) | O | O | X | X | X | X |
-|ORF7a     | [YP_009724395.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724395.1) | O | X | X | O | O | X |
-|ORF7b     | [YP_009725296.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725296.1) | O | O | X | X | X | X |
-|ORF8      | [YP_009724396.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724396.1) | O | O | X | X | O | X |
-|ORF10     | [YP_009725255.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725255.1) | O | O | X | X | X | X |
-|E\_protein| [YP_009724392.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724392.1) | X | X | X | X | X | O |
+|  Protein | RefSeq | [FeigLab](https://github.com/feiglab/sars-cov-2-proteins/tree/master/FeigLab) | [RaptorX](https://github.com/feiglab/sars-cov-2-proteins/tree/master/RaptorX) | [AlphaFold](https://github.com/feiglab/sars-cov-2-proteins/tree/master/AlphaFold) | [BakerLab](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Soluble) | [SWISS-MODEL](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Soluble) | [Membrane](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Membrane) | [CASP-Commons](http://predictioncenter.org/caspcommons/models_consensus2.cgi) |
+|:--------:|:--------:|:-------:|:-------:|:---------:|:--------:|:-----------:|:--------:|:--:|
+|nsp1      | [YP_009725297.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725297.1) | O | X | X | X | O | X | X |
+|nsp2      | [YP_009725298.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725298.1) | O | O | O | O | X | X | O |
+|PL-PRO    | [YP_009725299.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725299.1) | O | O | O | X | O | X | O |
+|nsp4      | [YP_009725300.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725300.1) | O | O | O | X | (partial) | O | O |
+|nsp6      | [YP_009725302.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725302.1) | O | O | O | X | X | O | O |
+|ORF3a     | [YP_009724391.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724391.1) | O | O | O | X | X | X | O |
+|E\_protein| [YP_009724392.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724392.1) | X | X | X | X | X | O | X |
+|M\_protein| [YP_009724393.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724393.1) | O | O | O | X | X | O | O |
+|ORF6      | [YP_009724394.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724394.1) | O | O | X | X | X | X | O |
+|ORF7a     | [YP_009724395.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724395.1) | O | X | X | O | O | X | X |
+|ORF7b     | [YP_009725296.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725296.1) | O | O | X | X | X | X | O |
+|ORF8      | [YP_009724396.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724396.1) | O | O | X | X | O | X | O |
+|ORF10     | [YP_009725255.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725255.1) | O | O | X | X | X | X | O |
 
 
 ### Acknowledgements
