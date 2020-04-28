@@ -28,17 +28,22 @@ detailed explanation on the initial models are described below. We refined the p
 is set up via [CHARMM-GUI](http://www.charmm-gui.org/?doc=input/membrane.bilayer). Refinement simulations were performed
 on GPU clusters provided by [COVID-19 HPC Consortium](https://covid19-hpc-consortium.org/) and
 the [MSU-HPCC](https://icer.msu.edu/about/announcements/covid-19-research-icer-queue-times).
+
 For M protein, we first revised its monomer structure by combining information from the AlphaFold model and ours. As it
 forms dimer in physiological condition, we built dimer models by facing two out of three transmembrane helices; it
 resulted in three candidates. These dimer models were subjected to coarse-grained MD simulations to adjust relative
 orientations by Prof. Khalid in Univ. of Southampton, UK. The resulting coarse-grained models were converted into
 all-atom models. One of the all-atom model was selected for the further refinement by using membrane insertion energy
 and visual inspection.
+
 For E protein, we predicted its monomer structure by using our structure prediction pipeline. Then, the model was used
 to built a homo-pentameric structure by using pentameric assembly of E protein of SARS-CoV (PDB ID: 5x29). Because
 C-terminal residues should not be in the membrane, so we manually adjusted their relative positions.
+
 For nsp4, we re-built our model with additional information from literature search.
+
 For nsp6, we took AlphaFold model for the refinement in the menbrane environment.
+
 
 ### Model summary and comparisons
 |  Protein | RefSeq | [FeigLab](https://github.com/feiglab/sars-cov-2-proteins/tree/master/FeigLab) | [RaptorX](https://github.com/feiglab/sars-cov-2-proteins/tree/master/RaptorX) | [AlphaFold](https://github.com/feiglab/sars-cov-2-proteins/tree/master/AlphaFold) | [BakerLab](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Soluble) | [SWISS-MODEL](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Soluble) | [Membrane](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Membrane) | [CASP-Commons](http://predictioncenter.org/caspcommons/models_consensus2.cgi) |
