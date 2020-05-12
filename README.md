@@ -44,6 +44,16 @@ For nsp4, we re-built our model with additional information from literature sear
 
 For nsp6, we took AlphaFold model for the refinement in the menbrane environment.
 
+### Spike/M protein complex model
+We modeled Spike (trimer) and M protein (dimer) complexes with a stoichometry of 1:4 in the ER membrane environment.
+Coarse-grained MD simulations were performed from random orientations of those proteins by using MARTINI force field by
+Prof. Khalid. We clustered sampled conformations via DBSCAN algorithm with a 5 Angstrom of CA-RMSD cutoff. We got 5
+clusters, and the most of the conformations were in the biggest cluster (>99%). We took the cluster center from the
+biggest cluster and converted into all-atom representation by superposing all-atom models. As there were a few
+side-chain overlaps between proteins, we slightly adjusted orientation manually. Finally, we set up all-atom MD simulation 
+with the ER membrane by using [CHARMM-GUI](http://www.charmm-gui.org/?doc=input/membrane.bilayer) and conducted
+refinement simulations.
+
 
 ### Model summary and comparisons
 |  Protein | RefSeq | [FeigLab](https://github.com/feiglab/sars-cov-2-proteins/tree/master/FeigLab) | [RaptorX](https://github.com/feiglab/sars-cov-2-proteins/tree/master/RaptorX) | [AlphaFold](https://github.com/feiglab/sars-cov-2-proteins/tree/master/AlphaFold) | [BakerLab](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Soluble) | [SWISS-MODEL](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Soluble) | [Membrane](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Membrane) | [CASP-Commons](http://predictioncenter.org/caspcommons/models_consensus2.cgi) |
