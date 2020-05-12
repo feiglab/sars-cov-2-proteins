@@ -56,21 +56,22 @@ refinement simulations.
 
 
 ### Model summary and comparisons
-|  Protein | RefSeq | [FeigLab](https://github.com/feiglab/sars-cov-2-proteins/tree/master/FeigLab) | [RaptorX](https://github.com/feiglab/sars-cov-2-proteins/tree/master/RaptorX) | [AlphaFold](https://github.com/feiglab/sars-cov-2-proteins/tree/master/AlphaFold) | [BakerLab](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Soluble) | [SWISS-MODEL](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Soluble) | [Membrane](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Membrane) | [CASP-Commons](http://predictioncenter.org/caspcommons/models_consensus2.cgi) |
-|:--------:|:--------:|:-------:|:-------:|:---------:|:--------:|:-----------:|:--------:|:--:|
-|nsp1      | [YP_009725297.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725297.1) | O | X | X | X | O | X | X |
-|nsp2      | [YP_009725298.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725298.1) | O | O | O | O | X | X | O |
-|PL-PRO    | [YP_009725299.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725299.1) | O | O | O | X | O | X | O |
-|nsp4      | [YP_009725300.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725300.1) | O | O | O | X | (partial) | O | O |
-|nsp6      | [YP_009725302.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725302.1) | O | O | O | X | X | O | O |
-|ORF3a     | [YP_009724391.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724391.1) | O | O | O | X | X | X | O |
-|E\_protein| [YP_009724392.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724392.1) | X | X | X | X | X | O | X |
-|M\_protein| [YP_009724393.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724393.1) | O | O | O | X | X | O | O |
-|ORF6      | [YP_009724394.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724394.1) | O | O | X | X | X | X | O |
-|ORF7a     | [YP_009724395.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724395.1) | O | X | X | O | O | X | X |
-|ORF7b     | [YP_009725296.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725296.1) | O | O | X | X | X | X | O |
-|ORF8      | [YP_009724396.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724396.1) | O | O | X | X | O | X | O |
-|ORF10     | [YP_009725255.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725255.1) | O | O | X | X | X | X | O |
+|  Protein  | RefSeq | [FeigLab](https://github.com/feiglab/sars-cov-2-proteins/tree/master/FeigLab) | [RaptorX](https://github.com/feiglab/sars-cov-2-proteins/tree/master/RaptorX) | [AlphaFold](https://github.com/feiglab/sars-cov-2-proteins/tree/master/AlphaFold) | [BakerLab](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Soluble) | [SWISS-MODEL](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Soluble) | [Membrane](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Membrane) | [CASP-Commons](http://predictioncenter.org/caspcommons/models_consensus2.cgi) |
+|:---------:|:--------:|:-------:|:-------:|:---------:|:--------:|:-----------:|:--------:|:--:|
+|nsp1       | [YP_009725297.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725297.1) | O | X | X | X | O | X | X |
+|nsp2       | [YP_009725298.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725298.1) | O | O | O | O | X | X | O |
+|PL-PRO     | [YP_009725299.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725299.1) | O | O | O | X | O | X | O |
+|nsp4       | [YP_009725300.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725300.1) | O | O | O | X | (partial) | O | O |
+|nsp6       | [YP_009725302.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725302.1) | O | O | O | X | X | O | O |
+|ORF3a      | [YP_009724391.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724391.1) | O | O | O | X | X | X | O |
+|E\_protein | [YP_009724392.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724392.1) | X | X | X | X | X | O | X |
+|M\_protein | [YP_009724393.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724393.1) | O | O | O | X | X | O | O |
+|ORF6       | [YP_009724394.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724394.1) | O | O | X | X | X | X | O |
+|ORF7a      | [YP_009724395.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724395.1) | O | X | X | O | O | X | X |
+|ORF7b      | [YP_009725296.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725296.1) | O | O | X | X | X | X | O |
+|ORF8       | [YP_009724396.1](https://www.ncbi.nlm.nih.gov/protein/YP_009724396.1) | O | O | X | X | O | X | O |
+|ORF10      | [YP_009725255.1](https://www.ncbi.nlm.nih.gov/protein/YP_009725255.1) | O | O | X | X | X | X | O |
+|S/M complex| - | X | X | X | X | X | O | X |
 
 
 ### Acknowledgements
