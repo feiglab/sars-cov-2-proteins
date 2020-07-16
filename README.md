@@ -62,7 +62,8 @@ found that we could build a dimer model while it still satisfied the predicted c
 inter-chain contacts rather than intra-chain contacts. We applied our membrane protein refinement method to the new M
 protein model. Here is the [link](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Membrane/M_dimer_new.pdb)
 to the new model.
-[M protein contacts](https://github.com/feiglab/sars-cov-2-proteins/tree/master/images/M_contact.png)
+
+![M protein contacts](https://github.com/feiglab/sars-cov-2-proteins/blob/master/images/M_contact.png)
 
 ### Model summary and comparisons
 |  Protein  | RefSeq | [FeigLab](https://github.com/feiglab/sars-cov-2-proteins/tree/master/FeigLab) | [RaptorX](https://github.com/feiglab/sars-cov-2-proteins/tree/master/RaptorX) | [AlphaFold](https://github.com/feiglab/sars-cov-2-proteins/tree/master/AlphaFold) | [BakerLab](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Soluble) | [SWISS-MODEL](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Soluble) | [Membrane](https://github.com/feiglab/sars-cov-2-proteins/tree/master/Membrane) | [CASP-Commons](http://predictioncenter.org/caspcommons/models_consensus2.cgi) |
